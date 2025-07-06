@@ -2,21 +2,21 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MC Pelerynki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
       background-color: #1e1e1e;
       color: white;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #3a3a3a;
-      padding: 20px;
+      background-color: #2c2c2c;
       text-align: center;
+      padding: 20px;
     }
 
     h1 {
@@ -24,42 +24,45 @@
       font-size: 2.5em;
     }
 
-    nav {
-      background-color: #2a2a2a;
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #00ffcc;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
     main {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cape {
+      background-color: #333;
+      border-radius: 10px;
       padding: 20px;
+      margin: 15px 0;
+      width: 90%;
+      max-width: 600px;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .cape h2 {
+      margin-bottom: 10px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 10px 20px;
       background-color: #00ffcc;
       color: #000;
-      border: none;
-      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 5px;
     }
 
     footer {
-      background-color: #2a2a2a;
-      padding: 10px;
       text-align: center;
+      background-color: #2c2c2c;
+      padding: 10px;
       font-size: 0.9em;
-      color: #888;
+      color: #aaa;
     }
   </style>
 </head>
@@ -67,24 +70,31 @@
 
 <header>
   <h1>MC Pelerynki</h1>
-  <p>Twoje własne pelerynki do Minecrafta!</p>
+  <p>Unikalne pelerynki do Minecrafta – Menace, Home i Purple Heart</p>
 </header>
 
-<nav>
-  <a href="#">Strona Główna</a>
-  <a href="#">Jak Działa?</a>
-  <a href="#">Pobierz</a>
-  <a href="#">Kontakt</a>
-</nav>
-
 <main>
-  <h2>Witaj na stronie MC Pelerynki!</h2>
-  <p>Dodaj wyjątkowe pelerynki do swojej postaci w Minecraft! Łatwo, szybko i za darmo.</p>
-  <a href="#" class="btn">Pobierz Teraz</a>
+  <div class="cape">
+    <h2>Menace</h2>
+    <p>Mroczna, stylowa peleryna z efektem zagrożenia.</p>
+    <a class="btn" href="https://paypal.me/adiszekk" target="_blank">Kup teraz</a>
+  </div>
+
+  <div class="cape">
+    <h2>Home</h2>
+    <p>Peleryna inspirowana domem i klasyką Minecrafta.</p>
+    <a class="btn" href="https://paypal.me/adiszekk" target="_blank">Kup teraz</a>
+  </div>
+
+  <div class="cape">
+    <h2>Purple Heart</h2>
+    <p>Fioletowa pelerynka z sercem – dla wyjątkowych graczy.</p>
+    <a class="btn" href="https://paypal.me/adiszekk" target="_blank">Kup teraz</a>
+  </div>
 </main>
 
 <footer>
-  &copy; 2025 MC Pelerynki. Wszelkie prawa zastrzeżone.
+  &copy; 2025 MC Pelerynki. Sprzedaż pelerynek Minecraft. Kontakt: adiszekk
 </footer>
 
 </body>
