@@ -10,25 +10,43 @@
       color: white;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
     }
 
     header {
       background-color: #2c2c2c;
-      text-align: center;
       padding: 20px;
+      text-align: center;
     }
 
-    h1 {
+    header h1 {
       margin: 0;
       font-size: 2.5em;
     }
 
-    main {
-      padding: 30px;
+    nav {
+      background-color: #121212;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      padding: 8px;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
     }
 
     .cape {
@@ -36,10 +54,7 @@
       border-radius: 10px;
       padding: 20px;
       margin: 15px 0;
-      width: 90%;
-      max-width: 600px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     .cape h2 {
@@ -70,31 +85,67 @@
 
 <header>
   <h1>MC Pelerynki</h1>
-  <p>Unikalne pelerynki do Minecrafta – Menace, Home i Purple Heart</p>
+  <p>Unikalne pelerynki Minecraft – Menace, Home i Purple Heart</p>
 </header>
 
-<main>
+<nav>
+  <a href="#start">🏠 Strona Główna</a>
+  <a href="#jak-kupic">❓ Jak Kupić</a>
+  <a href="#onas">ℹ️ O nas</a>
+  <a href="#kontakt">📬 Kontakt</a>
+  <a href="https://discord.gg/twoj-link" target="_blank">💬 Discord</a>
+</nav>
+
+<section id="start">
+  <h2>Nasze Pelerynki</h2>
+
   <div class="cape">
     <h2>Menace</h2>
-    <p>Mroczna, stylowa peleryna z efektem zagrożenia.</p>
+    <p>Mroczna peleryna z efektem zagrożenia.</p>
     <a class="btn" href="https://paypal.me/adiszekk" target="_blank">Kup teraz</a>
   </div>
 
   <div class="cape">
     <h2>Home</h2>
-    <p>Peleryna inspirowana domem i klasyką Minecrafta.</p>
+    <p>Klasyczna pelerynka w stylu Minecraft.</p>
     <a class="btn" href="https://paypal.me/adiszekk" target="_blank">Kup teraz</a>
   </div>
 
   <div class="cape">
     <h2>Purple Heart</h2>
-    <p>Fioletowa pelerynka z sercem – dla wyjątkowych graczy.</p>
+    <p>Fioletowa peleryna z sercem – wyjątkowy styl.</p>
     <a class="btn" href="https://paypal.me/adiszekk" target="_blank">Kup teraz</a>
   </div>
-</main>
+</section>
+
+<section id="jak-kupic">
+  <h2>Jak kupić pelerynkę?</h2>
+  <p>To bardzo proste!</p>
+  <ol>
+    <li>Wybierz pelerynkę powyżej.</li>
+    <li>Kliknij <strong>"Kup teraz"</strong>.</li>
+    <li>Zostaniesz przekierowany na PayPal – zapłać.</li>
+    <li>Po płatności skontaktuj się z nami przez Discord lub maila.</li>
+    <li>Otrzymasz pelerynę w ciągu 24 godzin!</li>
+  </ol>
+</section>
+
+<section id="onas">
+  <h2>O nas</h2>
+  <p>Jesteśmy fanami Minecrafta, którzy tworzą unikalne pelerynki dla graczy. Każdy design robiony jest ręcznie, z myślą o stylu i wyjątkowości. Dołącz do setek zadowolonych graczy już dziś!</p>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Masz pytania lub problem z płatnością?</p>
+  <ul>
+    <li>Email: <strong>pelerynki@mc.pl</strong></li>
+    <li>Discord: <strong>adiszekk</strong></li>
+  </ul>
+</section>
 
 <footer>
-  &copy; 2025 MC Pelerynki. Sprzedaż pelerynek Minecraft. Kontakt: adiszekk
+  &copy; 2025 MC Pelerynki. Wszystkie prawa zastrzeżone.
 </footer>
 
 </body>
